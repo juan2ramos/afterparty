@@ -1,0 +1,214 @@
+@import "lib/settings"
+@import "lib/general"
+@import "lib/font"
+
+body
+  background: black
+.Header
+  background: black
+.Header-logo
+  width: 100%
+  text-align: center
+  margin: 0
+  height: 40vh
+  padding: 1.5rem
+  @include backgroundAfter
+  & img
+    height: 90%
+    position: relative
+    top: 5%
+.Header-callToAction
+  text-align: center
+  font-size: 1.8rem
+  color: $gold
+  & a
+    color: $gold
+    &:hover
+      color: #fff
+      & span
+        color: #fff
+  & div
+    display: block
+    vertical-align: middle
+    padding: 1rem 1rem
+    &:nth-child(2)
+      padding: 0
+    @include respond-to(small)
+      display: inline-block
+      padding: 2rem 1rem
+  & span
+    display: block
+    font-family: $bold
+    font-size: 1.4em
+    color: rgb(220, 198, 106)
+
+.Header-slogan
+  color: $gold
+  text-align: center
+  font-size: 1.5rem
+  letter-spacing: .5em
+  display: none
+  padding: 1em
+  @include respond-to(small)
+    display: block
+.Nav.Nav--open
+  @include transform(translateY(0))
+.Nav
+  margin-bottom: 2rem
+  position: fixed
+  top: 0
+  width: 100vw
+  background: black
+  z-index: 10
+  height: 100vh
+  @include transform(translateY(-100vh))
+  @include transition(all .5s)
+  @include respond-to(middle)
+    position: static
+    width: auto
+    background: none
+    height: auto
+
+.Nav-ul
+  max-width: 70rem
+  font-size: 1.2rem
+  text-align: center
+  margin-top: 2rem
+  @include respond-to(middle)
+    margin: auto
+  & a
+    color: $gold
+    &:hover
+      color: white
+  & li
+    display: block
+    vertical-align: middle
+    padding: .8rem
+    @include respond-to(middle)
+      display: inline-block
+      padding: .4rem .8rem
+.Nav-call
+  background-color: $gold
+  border: 2px solid $gold
+  color: black
+  padding: 0.5rem 1rem
+  font-family: $bold
+  margin: .8rem
+  display: block
+  @include respond-to(middle)
+    display: inline
+    margin: auto
+  &:hover
+    background-color: transparent
+    border: 2px solid $gold
+    color: $gold
+li.Nav-social
+  padding: .2rem .8rem
+  display: inline-block
+  vertical-align: middle
+  @include respond-to(middle)
+    padding: 0.2rem
+.Nav-button
+  position: fixed
+  z-index: 20
+  border-radius: .2rem
+  height: 3rem
+  width: 3rem
+  background: black
+  top: 1.5rem
+  right: 1.5rem
+  border: 1px $gold solid
+  cursor: pointer
+  & span
+    height: 3px
+    background: $gold
+    margin:  6px
+    display: block
+    @include transition(all .6s)
+    &:first-child
+      margin-top: 13px
+  &.Nav-button--open
+    & span:first-child
+      transform: rotate(45deg) translate(2px, 2px)
+    & span:nth-child(2)
+      transform: rotate(-45deg) translate(4px, -4px)
+    & span:last-child
+      transform: translateY(5px)
+
+
+.TopSellers
+  & h2
+    font-size: 2rem
+    color: $gold
+    margin: 1rem 0 1.1rem
+    text-align: center
+    @include respond-to(middle)
+      margin: 6rem 0 0
+
+.Grid-products
+  padding: 0 1rem
+  & li
+    display: inline-block
+    vertical-align: top
+    width: 80%
+    margin: 2rem 9% 1rem
+    @include respond-to(small)
+      width: 30%
+      margin: 2rem 1.4% 1rem
+    @include respond-to(middle)
+      width: 21.5%
+      margin: 2rem 1.5% 1rem
+  & figcaption
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    background: rgba(159, 132, 80, 0.9)
+    left: 0
+    opacity: 0
+    border-radius: .6rem
+    @include transition(all .3s)
+  & figure
+    overflow: hidden
+    background: rgb(226,226,226)
+    background: -moz-linear-gradient(-45deg,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%)
+    background: -webkit-linear-gradient(-45deg,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%)
+    background: linear-gradient(135deg,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%)
+    position: relative
+    cursor: pointer
+    text-align: center
+    border: 2px solid $gold
+    width: 100%
+    margin: auto
+    padding: 4rem 1rem
+    border-radius: .6rem
+    height: 287px
+    max-width: 300px
+    &:hover figcaption
+      opacity: 1
+    & a
+      display: block
+      border: 2px solid white
+      color: #fff
+      margin: 1rem
+      text-transform: uppercase
+      padding: .6rem
+      &:first-child
+        margin-top: 6rem
+      &:hover
+        color: $gold
+        background: white
+  & img
+    max-height: 150px
+  & p
+    margin: 0
+  & h3
+    font-family: $bold
+    margin: .4rem 0 0
+    color: $gold
+
+.Line-hr
+  @include backgroundAfter
+  border: none
+  height: .1rem
+

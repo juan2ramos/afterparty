@@ -1,0 +1,64 @@
+$gold : #F2CB6E
+$bold : 'Champagne-Limousines-Bold'
+
+@mixin respond-to($breakpoint)
+  @if $breakpoint == "small"
+    @media (min-width: 48em)
+      @content
+
+  @else if x == "middle"
+    @media (min-width: 56.25em)
+      @content
+  @else if $breakpoint == "large"
+  @media (min-width: 68.75em)
+    @content
+
+@mixin transition($transition...)
+  -moz-transition:    $transition
+  -o-transition:      $transition
+  -webkit-transition: $transition
+  transition:         $transition
+
+@mixin transform($transform...)
+  -moz-transform:    $transform
+  -o-transform:      $transform
+  -webkit-transform: $transform
+  transform:         $transform
+
+@mixin filter($filter-type,$filter-amount)
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})')
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})')
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})')
+  -o-filter: $filter-type+unquote('(#{$filter-amount})')
+  filter: $filter-type+unquote('(#{$filter-amount})')
+
+@mixin keyframes($animation-name)
+  @-webkit-keyframes $animation-name
+    @content
+
+  @-moz-keyframes $animation-name
+    @content
+
+  @-ms-keyframes $animation-name
+    @content
+
+  @-o-keyframes $animation-name
+    @content
+
+  @keyframes $animation-name
+    @content
+
+
+@mixin animate($str)
+  -webkit-animation: $str
+  -moz-animation: $str
+  -ms-animation: $str
+  -o-animation: $str
+  animation: $str
+
+@mixin backgroundAfter()
+  background: #edc14e
+  background: -moz-linear-gradient(-45deg,  #edc14e 0%, #8d5421 10%, #d7a844 30%, #f1ee9b 48%, #d7a844 58%, #562a15 88%, #d7a844 100%) /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #edc14e 0%,#8d5421 10%,#d7a844 30%,#f1ee9b 48%,#d7a844 58%,#562a15 88%,#d7a844 100%) /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #edc14e 0%,#8d5421 10%,#d7a844 30%,#f1ee9b 48%,#d7a844 58%,#562a15 88%,#d7a844 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edc14e', endColorstr='#d7a844',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */

@@ -1,37 +1,125 @@
-<?php
-/*
-Description: Home
-Theme: afterpartybogota
-*/
-?>
+<?php get_header(); ?>
 
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="TopSellers">
 
-    <title><?php wp_title(' | '); ?></title>
+    <h2>Productos más vendidos</h2>
+    <hr class="Line-hr">
+    <ul class="Grid-products">
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/big_aguardiente-antioqueno-sin-azucar.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
 
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span class="icon-cart"></span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza-el-correo-de-la-noche-en-lata.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza_poker_lata_six_pack.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza-el-correo-de-la-noche-en-lata.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza_poker_lata_six_pack.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza-el-correo-de-la-noche-en-lata.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza_poker_lata_six_pack.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
+        <li>
+            <figure>
+                <img src="<?php bloginfo('template_url')?>/assets/images/licores/cerveza_poker_lata_six_pack.png" alt="">
+                <figcaption>
+                    <a href="">Agregar al Carrito</a>
+                    <a href="">+ Info</a>
+                </figcaption>
+            </figure>
+            <div>
+                <h3>Cerveza Poker en lata </h3>
+                <p>Six pack de cerveza</p>
+                <b>$20.000 <span>carrito</span></b>
+            </div>
+        </li>
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php  bloginfo('template_url')?>/assets/images/favicon.ico">
+    </ul>
+</section>
 
-    <!---- TYPEKIT -- -->
-    <script type="text/javascript" src="http://use.typekit.com/uuf1qmf.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-    <link rel="stylesheet" href="<?php  bloginfo('template_url')?>/assets/css/normalize.css">
-    <link rel="stylesheet" href="<?php  bloginfo('template_url')?>/assets/css/style.css">
-
-
-
-</head>
-
-<body>
-
-<img src="<?php  bloginfo('template_url')?>/assets/images/after-party-Logo.png" alt="">
-
-</body>
-</html>
+<?php get_footer(); ?>
