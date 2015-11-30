@@ -31,8 +31,7 @@ Theme: AfterPartyBogota
 
 <header class="Header">
     <figure class="Header-logo">
-        <img src="<?php bloginfo('template_url') ?>/assets/images/after-party-logo.png"
-             alt="Correo de la noche After party">
+        <img src="<?php bloginfo('template_url') ?>/assets/images/after-party-logo.png"  alt="Correo de la noche After party">
     </figure>
     <div class="Header-callToAction">
         <a href="tel:031255555">

@@ -64,6 +64,7 @@ body
   @include transform(translateY(-100vh))
   @include transition(all .5s)
   @include respond-to(middle)
+    @include transform(translateY(0))
     position: static
     width: auto
     background: none
@@ -119,6 +120,8 @@ li.Nav-social
   right: 1.5rem
   border: 1px $gold solid
   cursor: pointer
+  @include respond-to(middle)
+    display: none
   & span
     height: 3px
     background: $gold
