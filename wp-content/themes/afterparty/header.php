@@ -18,6 +18,21 @@ Theme: AfterPartyBogota
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <!---- Favicon -- -->
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_url') ?>/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url') ?>/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url') ?>/assets/images/favicon/favicon-16x16.png">
+
+
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/assets/images/favicon.ico">
 
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/normalize.css">
@@ -47,11 +62,11 @@ Theme: AfterPartyBogota
     <div class="Nav-button"><span></span><span></span><span></span></div>
     <nav class="Nav">
         <ul class="Nav-ul">
-            <li><a href="">Promociones</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Cobertura</a></li>
-            <li><a href="">Nuestros servicios</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="<?php bloginfo('url') ?>">Inicio</a></li>
+            <li><a href="<?php bloginfo('url') ?>/promociones">Promociones</a></li>
+            <li><a href="<?php bloginfo('url') ?>/productos">Productos</a></li>
+            <li><a href="<?php bloginfo('url') ?>/cobertura">Cobertura</a></li>
+            <li><a href="<?php bloginfo('url') ?>/contacto">Contacto</a></li>
             <li><a href="tel:031255555"><span class="Nav-call">Haz clic y llama 2 555 555</span></a></li>
             <li class="Nav-social"><a href=""><span class="icon-facebook"></span></a></li>
             <li class="Nav-social"><a href=""><span class="icon-twitter"></span></a></li>
@@ -59,4 +74,4 @@ Theme: AfterPartyBogota
         </ul>
     </nav>
 </header>
-<main>
+<main class="<?php echo $post->post_name ?>">

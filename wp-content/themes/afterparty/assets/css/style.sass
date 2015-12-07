@@ -116,8 +116,8 @@ li.Nav-social
   height: 3rem
   width: 3rem
   background: black
-  top: 1.5rem
-  right: 1.5rem
+  top: .5rem
+  right: .5rem
   border: 1px $gold solid
   cursor: pointer
   @include respond-to(middle)
@@ -215,3 +215,150 @@ li.Nav-social
   border: none
   height: .1rem
 
+//  Maps
+
+#map-canvas
+  width: 100%
+  height: 500px
+
+// Coverage
+.cobertura
+  padding: 1rem
+.Coverage
+  & h2
+    text-transform: uppercase
+    color: #F2CB6E
+  & span
+    font-family: $bold
+    color: #FBF2DE
+  & p
+    margin:  0 0 .6rem
+// Contact
+.CallUs
+  display: block
+  vertical-align: top
+  max-width: 33rem
+  margin: auto
+  @include respond-to(middle)
+    display: inline-block
+    width: 14rem
+  & div
+    margin: 1rem 0 2rem
+  & a
+    color: #F2CB6E
+    &:hover
+      color: white
+
+.contacto
+  max-width: 50rem
+  width: 100%
+  padding: 0 1rem
+  @include respond-to(middle)
+    margin: 0 auto
+.Contact-form
+  display: block
+  vertical-align: top
+  max-width: 33.5rem
+  width: 100%
+  margin: 0 auto 2rem
+  @include respond-to(middle)
+    padding: 1rem 0 1rem 3.2rem
+    margin-bottom: 2rem
+    border-left: 1px solid #F2CB6E
+    display: inline-block
+  & button
+    margin-top: 1rem
+    width: 15rem
+    font-family: $bold
+    background: #F2CB6E
+    border: none
+    color: black
+    font-weight: bold
+    padding: .7rem
+    border: 2px solid #F2CB6E
+    &:hover
+      background-color: transparent
+      color: #F2CB6E
+  & label
+    display: block
+  & textarea
+    line-height: normal
+    width: 100%
+    background: black
+    height: 6.2rem
+    margin: .4rem 0 0
+    border: 1px solid #F2CB6E
+    padding: .5rem
+    color: #F2CB6E
+    font-weight: 700
+  & input
+    line-height: normal
+    width: 100%
+    background: black
+    height: 2.2rem
+    margin: .4rem 0 1rem
+    border: 1px solid #F2CB6E
+    padding: .5rem
+    color: #F2CB6E
+.Contact-questions
+  text-align: center
+  padding: 1rem 0 3rem
+
+.Footer-number
+  background: black
+  padding: 3rem
+  text-align: center
+  font-family: $bold
+  font-size: 2rem
+  border-top: #F2CB6E solid 1px
+  border-bottom: #F2CB6E solid 1px
+  & a
+    display: inline-block
+    color: #F2CB6E
+    &:hover
+      color: white
+
+// Nav Footer
+.Footer-Content
+  max-width: 65rem
+  margin: auto
+.NavFooter
+  font-size: .8rem
+  width: 100%
+  display: inline-block
+  margin: auto
+  text-align: center
+  padding: 2rem 0
+  vertical-align: middle
+  @include respond-to(small)
+    width: calc(33% - 2px)
+  & p
+    text-align: center
+    margin: .5em
+    font-size: .8rem
+  & li
+    list-style: none
+    display: inline-block
+    vertical-align: middle
+    border-right: 1px solid #F2CB6E
+    padding: 0 .5rem 0 .3rem
+    line-height: .8rem
+    &:last-child
+      border-right: none
+  & a
+    color: $gold
+    &:hover
+      color: white
+.Footer-payu
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  padding: 0 3.5rem
+  @include respond-to(small)
+    width: calc(33% - 2px)
+.Footer-center
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  @include respond-to(small)
+    width: calc(33% - 2px)
